@@ -17,11 +17,13 @@ function App() {
   // useRef hoof
   const passwordRef = useRef(null)
 
+
+  // useCall back -> Memorisation
   const passwordGenerator = useCallback(()=>{
     let pass = ""
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    if (numberAllowed) str += "0123456789"
-    if (charAllowed) str += "!@#$%^&*-_+={}[}~`"
+    if (numberAllowed) str += "0123456789" // short Hand
+    if (charAllowed) str += "!@#$%^&*-_+={}[]~`" // short Hand
 
     for (let i = 0; i <= length; i++) {
       let char = Math.floor(Math.random()* str.length + 1)
