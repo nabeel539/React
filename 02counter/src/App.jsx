@@ -10,6 +10,12 @@ function App() {
 
   const addValue =() => {
     counter = counter+1
+    // counter = counter+1
+    // counter = counter+1
+    // counter = counter+1
+    // counter = counter+1
+    //setCounter(counter+1)
+    // increase the last updated state
     setCounter(counter)
     console.log("clicked", counter);
   }
