@@ -10,6 +10,7 @@ import User from './components/User/User.jsx'
  import Github from './components/Github/Github.jsx'
 
 
+// complex--------
 // const router = createBrowserRouter([
 //   {
 //     path:'/',
@@ -32,6 +33,7 @@ import User from './components/User/User.jsx'
 // ])
 
 
+// Easier One ---------
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
